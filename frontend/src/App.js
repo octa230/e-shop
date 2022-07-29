@@ -36,6 +36,7 @@ import { Popper } from '@mui/material';
 import { Box } from '@mui/system';
 import { Fade } from '@mui/material';
 import Footer from './components/Footer';
+import NavigationBar from './components/NavigationBar';
 
 
 
@@ -81,7 +82,7 @@ function App() {
       <ToastContainer position="bottom-center" limit={1} />
  <header>
 
-   <Navbar className='header' variant='dark' expand='lg' sticky='top'>
+   <Navbar className='header' variant='dark' expand='lg' sticky='top'>    
      
        <LinkContainer to='/'>
        <Navbar.Brand><img className='img img-fluid header_img' src={logo}  alt={'logo'}/></Navbar.Brand>
@@ -161,6 +162,9 @@ function App() {
        
        </div>
  </header>
+      <div>      
+            <NavigationBar />
+      </div>
 
  <main>
 
@@ -170,7 +174,7 @@ function App() {
 
 
  
- <Button className='nav-link' variant='conatined' >
+ <Button className='nav-link' variant='contined' >
  <Tooltip title='search' arrow>
            <SearchIcon className='nav_icon' size={'1.8rem'} onClick={handleClick}/>
            </Tooltip>
@@ -272,9 +276,20 @@ function App() {
 <div className='footer'>
 <Footer />
 </div>
-<div className="footer">
-  All Rights Reserved
+
+
+
+<div className="footertwo">
+  
+  <p>All Rights Reserved.</p>
+    
 </div>
+<ul className='footerlist'>
+    <li><a href='#' />FACEBOOK</li>
+    <li><a href='#' />INSTAGRAM</li>
+    <li><a href='#' />PINTEREST</li>
+    <li><a href='#' />YOUTUBE</li>
+  </ul>
 
 
 

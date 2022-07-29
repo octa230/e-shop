@@ -1,7 +1,6 @@
 import React, { useEffect, useReducer } from 'react'
 //import { Link } from 'react-router-dom'
 import axios from 'axios'
-import logger from 'use-reducer-logger'
 import Product from '../components/Product'
 import { Helmet } from 'react-helmet-async'
 import LoadingBox from '../components/LoadingBox'
@@ -10,6 +9,7 @@ import { Grid,} from '@mui/material'
 import ScrollBar from '../components/ScrollBar'
 import { Container } from '@mui/material'
 import Footer from '../components/Footer'
+import NavigationBar from '../components/NavigationBar'
 
 
 
@@ -38,7 +38,7 @@ const HomeScreen = () => {
   
   //const [products, setProducts] = useState([]);
 
-  const [{loading, error, products}, dispatch] = useReducer(logger(reducer), {
+  const [{loading, error, products}, dispatch] = useReducer(reducer, {
     products: [],
     loading: true, 
     error: '',
@@ -69,10 +69,7 @@ const HomeScreen = () => {
       <Helmet>
         <title>Chateu Des Fluers</title>
       </Helmet>
-      
-      <div className='scrollbar'>
-        <ScrollBar />
-      </div>
+     
       
      
     

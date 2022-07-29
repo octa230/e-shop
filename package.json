@@ -17,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/octa230/e-shop/issues"
   },
-  "homepage": "https://github.com/octa230/e-shop#readme"
+  "homepage": "https://github.com/octa230/e-shop#readme",
+  "dependencies": {}
 }

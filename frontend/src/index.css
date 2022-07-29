@@ -182,3 +182,21 @@ font-weight: 600;
   align-items: center;
 
 }
+.footertwo{
+  display: flex;
+  justify-content: center;
+  margin-top: 82px;
+  padding: 45px;
+}
+.footerlist{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+.footerlist > li{
+  margin-top: 24px;
+  list-style: none;
+  width: 100px;
+}
